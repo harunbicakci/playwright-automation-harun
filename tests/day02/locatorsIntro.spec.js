@@ -29,3 +29,12 @@ data-ved="0ahUKEwj5gImox8WQAxXnfDABHTSyE78Q39UDCA8"></textarea>
 */
 
 //textarea[@class = 'gLFyf']
+
+// locators =>
+await page.getByRole("button", { name: "Submit" }).click();
+await page.getByText("Welcome Back!").isVisible();
+await page.getByLabel("Username").fill("testuser");
+await page.getByPlaceholder("Enter your email").fill("user@example.com");
+await page.getByAltText("Company Logo").click();
+await page.getByTitle("Settings").click();
+await page.getByTestId("login-button").click();
