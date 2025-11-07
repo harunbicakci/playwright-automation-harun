@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
 
 test.describe("Test Group", () => {
   test.beforeEach(async ({ page }) => {
