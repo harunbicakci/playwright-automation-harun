@@ -1,5 +1,10 @@
 import { test, expect } from "@playwright/test";
 
+// To create environment variables
+// 1- Go to search bar on top VS Code
+// 2- Search for > user settings JSON and open
+// 3- Update the "playwright.env" and "terminal.integrated.env.osx" titles
+
 test("@env-test Testing environment variables", async ({ page }) => {
   console.log(process.env.PRACTICE_USERNAME);
   console.log(process.env.PRACTICE_PASSWORD);
