@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
-import { firstPage } from "../../pages/firstPage.js";
+import { FirstPage } from "../../pages/firstPage.js";
 
 test("Page Elements Validation", async ({ page }) => {
-  const firstPageObj = new firstPage(page);
-  await page.waitForTimeout(2000);
+  const firstPageObj = new FirstPage(page);
+  await firstPageObj.waitForTimeout(2000);
   await firstPageObj.navigateToFirstPage();
   await firstPageObj.validateFooterLength(5);
   await firstPageObj.validateHowDidYouHearDropdown();

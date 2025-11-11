@@ -1,6 +1,6 @@
 import { expect } from "@playwright/test";
 
-export class firstPage {
+export class FirstPage {
   constructor(page) {
     this.page = page;
     this.firstNameInput = page.locator("[formcontrolname='firstName']");
