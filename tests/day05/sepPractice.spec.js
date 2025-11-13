@@ -23,7 +23,7 @@
 
 import { test } from "@playwright/test";
 
-test("SEP Practice @sep", async ({ page }) => {
+test("@e2e SEP Practice @sep", async ({ page }) => {
   CommonUI.loginToSEP(page);
 
   await page.waitForTimeout(3000);
