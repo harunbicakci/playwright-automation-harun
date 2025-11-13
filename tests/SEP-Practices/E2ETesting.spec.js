@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { FirstPage } from "../../pages/firstPage.js";
+// import { FirstPage } from "../../pages/firstPage.js";
 
 test("Page Elements Validation", async ({ page }) => {
   const firstPageObj = new FirstPage(page);
@@ -13,4 +13,6 @@ test("Page Elements Validation", async ({ page }) => {
     "test@test.com",
     "4079876543"
   );
+
+  // jenkins setup
 });
